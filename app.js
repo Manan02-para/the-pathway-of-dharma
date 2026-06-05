@@ -92,17 +92,50 @@ document.addEventListener('DOMContentLoaded', () => {
   /* --- 6. PRE-ORDER FORM SUBMIT LOGIC --- */
   const preOrderForm = document.getElementById('preOrderForm');
   const successContainer = document.getElementById('successContainer');
-  const regEmail = document.getElementById('regEmail');
   const btnBackToForm = document.getElementById('btnBackToForm');
+  const successWhatsappBtn = document.getElementById('successWhatsappBtn');
+  const successEmailBtn = document.getElementById('successEmailBtn');
   
   if (preOrderForm && successContainer) {
     preOrderForm.addEventListener('submit', (e) => {
       e.preventDefault(); // Stop standard redirect
       
+      const nameVal = document.getElementById('fullName').value;
       const emailVal = document.getElementById('emailAddr').value;
+      const phoneVal = document.getElementById('phoneNum').value;
       
-      // Update success message email placeholder
-      if (regEmail) regEmail.textContent = emailVal;
+      // WhatsApp message formatting
+      const whatsappText = `Pranam! I would like to pre-register/inquire about 'The Path of Dharma: Lanka's Shadow'. Here are my details:
+- Name: ${nameVal}
+- Email: ${emailVal}
+- Phone: ${phoneVal}`;
+      const whatsappUrl = `https://wa.me/917850061007?text=${encodeURIComponent(whatsappText)}`;
+      
+      // Email link formatting
+      const emailSubject = `Pre-Registration: ${nameVal}`;
+      const emailBody = `Pranam,
+
+I would like to pre-register/inquire about 'The Path of Dharma: Lanka's Shadow'.
+
+Details:
+- Name: ${nameVal}
+- Email: ${emailVal}
+- Phone: ${phoneVal}
+
+Regards`;
+      const mailtoUrl = `mailto:tooalonewoolf@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+      
+      // Update success buttons href attributes
+      if (successWhatsappBtn) successWhatsappBtn.setAttribute('href', whatsappUrl);
+      if (successEmailBtn) successEmailBtn.setAttribute('href', mailtoUrl);
+      
+      // Try to open WhatsApp in a new tab
+      window.open(whatsappUrl, '_blank');
+      
+      // Try to trigger the mail client after a small delay to avoid browser blocking
+      setTimeout(() => {
+        window.location.href = mailtoUrl;
+      }, 300);
       
       // Fade out form, fade in success message
       preOrderForm.style.transition = 'opacity 0.4s ease-out';

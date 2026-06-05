@@ -323,9 +323,17 @@
               <div class="success-icon-wrap">✓</div>
               <h3 class="success-title gold-text">Pranam, You are Registered</h3>
               <p class="success-message">
-                Your priority reservation has been logged. You are now placed in our VIP launch queue. We will contact you at <span id="regEmail" style="color: var(--color-gold-light); font-weight: 500;"></span> once the release date is announced.
+                Your priority reservation has been logged. We have initiated the connection to send your details. If your apps did not open automatically, please click below to complete your registration:
               </p>
-              <button type="button" class="btn-secondary" id="btnBackToForm">Register Another Copy</button>
+              <div class="success-actions" style="display: flex; flex-direction: column; gap: 1rem; width: 100%; margin-bottom: 2rem;">
+                <a href="#" id="successWhatsappBtn" target="_blank" class="btn-primary" style="text-align: center; display: block; text-decoration: none; background: linear-gradient(135deg, #25D366 0%, #128C7E 100%); box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3); border: none; color: white;">
+                  💬 Send via WhatsApp
+                </a>
+                <a href="#" id="successEmailBtn" class="btn-secondary" style="text-align: center; display: block; text-decoration: none;">
+                  ✉️ Send via Email
+                </a>
+              </div>
+              <button type="button" class="btn-secondary" id="btnBackToForm" style="width: 100%;">Register Another Copy</button>
             </div>
           </div>
           
