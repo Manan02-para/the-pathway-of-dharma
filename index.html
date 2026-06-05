@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pre-register for 'The Path of Dharma: Lanka's Shadow: A Strategic Saga'. Immerse yourself in the epic tactical board game of Ramayana from Ayodhya to Lanka. Premium Collector's Edition available for pre-order.">
+  <meta name="keywords" content="Ramayana board game, Lanka's Shadow, Path of Dharma, strategic board games, Indian mythology games, collector edition board game">
+  <title>The Path of Dharma: Lanka's Shadow - A Strategic Saga</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- FIXED BACKDROP SYSTEM -->
+  <div class="bg-viewport-fixed">
+    <img src="assets/map-layout.jpg" class="bg-map-image" id="bgMap" alt="Detailed Strategic Board Map of India">
+  </div>
+  <div class="bg-gradient-overlay"></div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="header-bar" id="headerBar">
+    <div class="container">
+      <a href="#" class="logo-wrap" id="logoLink">
+        <div class="logo-icon">🕉</div>
+        <span class="logo-text">EPIC QUEST GAMES</span>
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="#saga">The Saga</a></li>
+        <li><a href="#map">The Map</a></li>
+        <li><a href="#gameplay">Gameplay</a></li>
+        <li><a href="#preorder">Pre-Order</a></li>
+      </ul>
+      
+      <a href="#preorder" class="btn-cta-nav" id="navCta">Pre-Register</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-sec" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="pulse-dot"></span>
+              Limited Collector's Release
+            </div>
+            
+            <h1 class="hero-title">
+              The Path of Dharma<br>
+              <span class="gold-text">Lanka's Shadow</span>
+            </h1>
+            
+            <p class="hero-subtitle">
+              Embark on an ancient tactical odyssey. Command divine forces, build alliances, and bridge the ocean. Relive the epic journey of Ramji from Ayodhya to Lanka in a premium, beautifully crafted strategy board game.
+            </p>
+            
+            <div class="hero-pricing-tag">
+              <div class="pricing-label">Collector's Edition</div>
+              <div class="pricing-numbers">
+                <span class="price-current">₹11,999</span>
+                <span class="price-original">₹14,999</span>
+                <span class="price-discount">Save 20%</span>
+              </div>
+            </div>
+            
+            <div class="hero-ctas">
+              <a href="#preorder" class="btn-primary" id="heroCtaPrimary">Pre-Register Now</a>
+              <a href="#saga" class="btn-secondary" id="heroCtaSecondary">Explore The Saga</a>
+            </div>
+          </div>
+          
+          <div class="hero-image-area">
+            <div class="scene-3d">
+              <div class="box-3d" id="box3D" aria-label="3D Rotating Board Game Box">
+                <div class="box-face face-front"></div>
+                <div class="box-face face-back"></div>
+                <div class="box-face face-left">LANKA'S SHADOW</div>
+                <div class="box-face face-right">LANKA'S SHADOW</div>
+                <div class="box-face face-top"></div>
+                <div class="box-face face-bottom"></div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- THE SAGA INTRODUCTION -->
+    <section class="section-padding saga-sec" id="saga">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="sub-header">The Narrative</span>
+          <h2 class="section-title">An Eternal Conflict of Cosmic Balance</h2>
+          <p class="section-desc">
+            "When Dharma is threatened by the shadows of Lanka, the path of righteousness must be forged across empires, wilderness, and oceans."
+          </p>
+        </div>
+        
+        <div class="journey-grid">
+          
+          <div class="step-card glass-panel reveal-on-scroll">
+            <div class="step-number">I</div>
+            <h3 class="step-title">The Royal Exile</h3>
+            <p class="step-desc">
+              Begin in the golden towers of Ayodhya. Strategize your resources, assemble the royal weaponry, and travel southwards into exile under the guidance of ancient sages.
+            </p>
+          </div>
+          
+          <div class="step-card glass-panel reveal-on-scroll">
+            <div class="step-number">II</div>
+            <h3 class="step-title">The Dark Forest Trials</h3>
+            <p class="step-desc">
+              Navigate the treacherous, demon-infested woods of Dandakaranya. Outsmart Ravan's shadow agents and protect the sages to gain celestial blessings and mystic weapons.
+            </p>
+          </div>
+          
+          <div class="step-card glass-panel reveal-on-scroll">
+            <div class="step-number">III</div>
+            <h3 class="step-title">The Ocean Siege</h3>
+            <p class="step-desc">
+              Forge alliances with the Vanara kingdom of Kishkindha. Construct the legendary Ram Setu bridge across the roaring southern seas, and lay siege to Ravan's golden fort.
+            </p>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE MAP SHOWCASE -->
+    <section class="section-padding journey-sec" id="map">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="sub-header">The Battleground</span>
+          <h2 class="section-title">The Sacred Map of Bharatvarsha</h2>
+          <p class="section-desc">
+            The board is a meticulously detailed physical map split into strategic regions. Trace Ramji's journey with glowing markers indicating key milestones.
+          </p>
+        </div>
+        
+        <div class="journey-map-showcase reveal-on-scroll" id="mapShowcase">
+          <img src="assets/quadrants-board.jpg" class="journey-map-image" alt="Physical Board Game Map showing Ayodhya and Ravan's Lanka layout">
+          
+          <!-- Interactive map pins -->
+          <div class="map-glow-pin pin-ayodhya" data-info="Ayodhya: The starting capital. Build resources and prepare your initial strategy.">
+            <div class="pin-dot"></div>
+            <span class="pin-label">Ayodhya</span>
+          </div>
+          
+          <div class="map-glow-pin pin-dandaka" data-info="Dandakaranya: Forest of exile. Defeat initial Asura forces and earn blessings.">
+            <div class="pin-dot"></div>
+            <span class="pin-label">Dandakaranya</span>
+          </div>
+          
+          <div class="map-glow-pin pin-kishkindha" data-info="Kishkindha: Secure alliance with Sugriva and Hanuman's army.">
+            <div class="pin-dot"></div>
+            <span class="pin-label">Kishkindha</span>
+          </div>
+          
+          <div class="map-glow-pin pin-setu" data-info="Ram Setu: Solve the bridge puzzle and build the path across the sea.">
+            <div class="pin-dot"></div>
+            <span class="pin-label">Ram Setu</span>
+          </div>
+          
+          <div class="map-glow-pin pin-lanka" data-info="Ravan's Lanka: The final confrontation. Face the ten-headed demon king.">
+            <div class="pin-dot"></div>
+            <span class="pin-label">Ravan's Lanka</span>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- GAMEPLAY FEATURES -->
+    <section class="section-padding gameplay-sec" id="gameplay">
+      <div class="container">
+        
+        <div class="gameplay-grid">
+          
+          <div class="comp-showcase-visual reveal-on-scroll">
+            <div class="slideshow-container">
+              <div class="my-slide fade">
+                <img src="assets/board-setup.jpg" class="comp-image" alt="Board game setup with components">
+              </div>
+              <div class="my-slide fade" style="display: none;">
+                <img src="assets/board-setup-alt.jpg" class="comp-image" alt="Alternate board setup with box cover">
+              </div>
+              <div class="my-slide fade" style="display: none;">
+                <img src="assets/map-close-up.jpg" class="comp-image" alt="Close up of map cards and trackers">
+              </div>
+              
+              <!-- Next/Prev Controls -->
+              <button class="slide-prev" id="prevSlideBtn" type="button" aria-label="Previous image">&lt;</button>
+              <button class="slide-next" id="nextSlideBtn" type="button" aria-label="Next image">&gt;</button>
+              
+              <!-- Slide Indicator Dots -->
+              <div class="slide-dots-container">
+                <span class="slide-dot active-dot" data-index="0"></span>
+                <span class="slide-dot" data-index="1"></span>
+                <span class="slide-dot" data-index="2"></span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="features-list">
+            <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
+              <span class="sub-header">Unboxing Excellence</span>
+              <h2 class="section-title" style="font-size: 2.2rem; margin-bottom: 0.5rem;">Unrivaled Premium Quality</h2>
+            </div>
+            
+            <div class="feature-item glass-panel reveal-on-scroll">
+              <div class="feature-icon-wrap">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9s2.015-9 4.5-9yM12 3a9.004 9.004 0 018.716 6.747M12 3a9.004 9.004 0 00-8.716 6.747" />
+                </svg>
+              </div>
+              <div class="feature-text">
+                <h3>Detailed Miniature Sculptures</h3>
+                <p>Features 75+ individually designed miniature figures including Ramji, Laxman, Hanuman, Ravan, and army squads crafted in high-definition resin.</p>
+              </div>
+            </div>
+            
+            <div class="feature-item glass-panel reveal-on-scroll">
+              <div class="feature-icon-wrap">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                </svg>
+              </div>
+              <div class="feature-text">
+                <h3>Solid Wooden Chest Case</h3>
+                <p>Store your saga elements in a luxury carved wooden box, finished with antique brass latches and custom slots to fit all cards and miniatures safely.</p>
+              </div>
+            </div>
+            
+            <div class="feature-item glass-panel reveal-on-scroll">
+              <div class="feature-icon-wrap">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+              </div>
+              <div class="feature-text">
+                <h3>Dharma & Karma Card Decks</h3>
+                <p>150+ linen-finish cards containing original artworks detailing events, legendary boons, strategic alignments, and cosmic challenges.</p>
+              </div>
+            </div>
+            
+          </div>
+          
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- PRE-ORDER & SIGN UP -->
+    <section class="section-padding register-sec" id="preorder">
+      <div class="container">
+        
+        <div class="register-grid">
+          
+          <div class="promo-info-card glass-panel reveal-on-scroll">
+            <div class="promo-header">
+              <span class="sub-header">Join the Legend</span>
+              <h2>Reservations Now Open</h2>
+              <p class="promo-desc">
+                The game is scheduled for launch in late 2026. Register now to secure your spot for the first print and unlock exclusive pre-launch benefits. No deposit required at this stage.
+              </p>
+            </div>
+            
+            <ul class="collector-perks">
+              <li>
+                <div class="perk-check">✓</div>
+                Guaranteed Copy of first 1,000 prints
+              </li>
+              <li>
+                <div class="perk-check">✓</div>
+                ₹3,000 off standard retail price
+              </li>
+              <li>
+                <div class="perk-check">✓</div>
+                Bonus: Antique Metal Coin set for in-game currency
+              </li>
+              <li>
+                <div class="perk-check">✓</div>
+                Original Art Book signed by the design team
+              </li>
+            </ul>
+          </div>
+          
+          <div class="form-panel glass-panel reveal-on-scroll">
+            <form id="preOrderForm">
+              <h3 class="form-title">Request Pre-Order Access</h3>
+              <p class="form-subtitle">Register your interest to receive launch priority notifications.</p>
+              
+              <div class="form-group">
+                <label for="fullName" class="form-label">Full Name</label>
+                <input type="text" id="fullName" class="form-input" placeholder="e.g. Ram Kumar" required>
+              </div>
+              
+              <div class="form-group-row">
+                <div class="form-group">
+                  <label for="emailAddr" class="form-label">Email Address</label>
+                  <input type="email" id="emailAddr" class="form-input" placeholder="name@domain.com" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="phoneNum" class="form-label">Phone Number</label>
+                  <input type="tel" id="phoneNum" class="form-input" placeholder="e.g. +91 98765 43210" required>
+                </div>
+              </div>
+              
+              <button type="submit" class="btn-primary btn-form-submit" id="btnSubmit">Pre-Register Interest</button>
+              
+              <p class="consent-text">
+                By clicking the button above, you agree to receive promotional updates and launch announcements from Epic Quest Games. We respect your privacy.
+              </p>
+            </form>
+            
+            <!-- Success Modal/State -->
+            <div class="form-success-container" id="successContainer">
+              <div class="success-icon-wrap">✓</div>
+              <h3 class="success-title gold-text">Pranam, You are Registered</h3>
+              <p class="success-message">
+                Your priority reservation has been logged. You are now placed in our VIP launch queue. We will contact you at <span id="regEmail" style="color: var(--color-gold-light); font-weight: 500;"></span> once the release date is announced.
+              </p>
+              <button type="button" class="btn-secondary" id="btnBackToForm">Register Another Copy</button>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-wrap">
+    <div class="container">
+      
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="logo-wrap">
+            <div class="logo-icon">🕉</div>
+            <span class="logo-text">EPIC QUEST GAMES</span>
+          </a>
+          <p class="footer-tagline">
+            We craft immersive historical and mythological board games, combining state of the art design with rich, culturally deep narratives.
+          </p>
+        </div>
+        
+        <div class="footer-links-wrap">
+          <div class="footer-links-col">
+            <h4>The Game</h4>
+            <ul>
+              <li><a href="#saga">The Saga</a></li>
+              <li><a href="#map">The Board Map</a></li>
+              <li><a href="#gameplay">Components</a></li>
+              <li><a href="#preorder">Special pricing</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-links-col">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">Gameplay Rules</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Press Kit</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-links-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Our Blog</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <span>&copy; 2026 Epic Quest Games. All rights reserved. Created in Bharat.</span>
+        
+        <div class="footer-socials">
+          <a href="#" class="social-icon" aria-label="Facebook">FB</a>
+          <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+          <a href="#" class="social-icon" aria-label="Twitter">TW</a>
+          <a href="#" class="social-icon" aria-label="Youtube">YT</a>
+        </div>
+      </div>
+      
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
