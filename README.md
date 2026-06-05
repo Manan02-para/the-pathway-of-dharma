@@ -4,6 +4,8 @@
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
 [![Platform](https://img.shields.io/badge/platform-web-orange.svg)]()
 
+### 🔗 **[Live Demo Website](https://manan02-para.github.io/the-pathway-of-dharma/)**
+
 A premium, highly aesthetic pre-promotional landing page for the epic tactical board game **"The Path of Dharma: Lanka's Shadow"** by Epic Quest Games. 
 
 Immerse yourself in the legendary journey of Ramji from Ayodhya to Lanka through scroll-triggered visuals, a fixed strategic map background, interactive map locations, and a dynamic 3D-like box display.
